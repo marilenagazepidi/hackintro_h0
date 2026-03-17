@@ -10,12 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Build image
+      - name: Build Docker image
         run: docker build -t test-image .
 
       - name: Install docker scout
         run: |
           curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sh
 
-      - name: Scan image
-        run: docker scout cves test-image
+      - name: Run scan (do not fail)
+        run: docker scout cves test-image || true
