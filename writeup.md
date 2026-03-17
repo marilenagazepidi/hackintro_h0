@@ -9,3 +9,7 @@
 Για το exploit δημιουργούμε script που παράγει ένα μεγάλο string
 
 To script δημιουργεί συμβολοσειρά 200 χαρακτήρων και προκαλεί buffer overflow έτσι το πρόγραμμα επιστρέφει Segmentation fault 
+
+
+DevSecOps Pipeline 
+Υλοποιήθηκε ενα pipeline με git actions. Το pipeline δημιουργεί ενα Docker image και κάνει vulnerability scan χρησιμοποιώντας Docker Scout
